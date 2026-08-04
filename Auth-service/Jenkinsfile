@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Build & Checkstyle') {
              steps {
-             bat 'cd Auth-service && mvn clean verify'
+             bat 'cd Auth-service && mvn clean verify -Dspring.cloud.config.enabled=false'
              }
         }
         stage('SonarQube Analysis') {
