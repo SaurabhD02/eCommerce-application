@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1d758c89-1daf-4564-ba26-cc61cbb8ff37" name="Changes" comment="crud_operation_code">
+      <change afterPath="$PROJECT_DIR$/Order-service/src/main/java/com/order_service/Order_service/dto/PaymentStatusReqDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order-service/src/main/java/com/order_service/Order_service/dto/PaymentStatusRespDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Payment-service/src/main/java/com/Payment_service/Payment_service/Repository/PaymentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Payment-service/src/main/java/com/Payment_service/Payment_service/config/ConfigMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Payment-service/src/main/java/com/Payment_service/Payment_service/controller/PaymentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Payment-service/src/main/java/com/Payment_service/Payment_service/dto/PaymentDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Payment-service/src/main/java/com/Payment_service/Payment_service/dto/PaymentResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Payment-service/src/main/java/com/Payment_service/Payment_service/entity/Payment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Payment-service/src/main/java/com/Payment_service/Payment_service/enums/PaymentStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Payment-service/src/main/java/com/Payment_service/Payment_service/service/PaymentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Payment-service/src/main/java/com/Payment_service/Payment_service/service/impl/PaymentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Payment-service/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Product-service/src/main/java/com/product_service/Product_service/Exception/ResourceNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Product-service/src/main/java/com/product_service/Product_service/config/ConfigMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Product-service/src/main/java/com/product_service/Product_service/config/InventoryServiceClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Product-service/src/main/java/com/product_service/Product_service/controller/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Product-service/src/main/java/com/product_service/Product_service/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Product-service/src/main/java/com/product_service/Product_service/dto/CategoryResDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Product-service/src/main/java/com/product_service/Product_service/dto/CreateCategoryReqDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Product-service/src/main/java/com/product_service/Product_service/dto/CreateProductRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Product-service/src/main/java/com/product_service/Product_service/dto/InventoryResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Product-service/src/main/java/com/product_service/Product_service/dto/ProductResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Product-service/src/main/java/com/product_service/Product_service/entity/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Product-service/src/main/java/com/product_service/Product_service/entity/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Product-service/src/main/java/com/product_service/Product_service/repository/CategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Product-service/src/main/java/com/product_service/Product_service/repository/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Product-service/src/main/java/com/product_service/Product_service/service/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Product-service/src/main/java/com/product_service/Product_service/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Product-service/src/main/java/com/product_service/Product_service/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Product-service/src/main/java/com/product_service/Product_service/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inventory-service/src/main/java/com/inventory_service/Inventory_service/controller/InventoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Inventory-service/src/main/java/com/inventory_service/Inventory_service/controller/InventoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inventory-service/src/main/java/com/inventory_service/Inventory_service/repository/InventoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Inventory-service/src/main/java/com/inventory_service/Inventory_service/repository/InventoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inventory-service/src/main/java/com/inventory_service/Inventory_service/service/InventoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Inventory-service/src/main/java/com/inventory_service/Inventory_service/service/InventoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inventory-service/src/main/java/com/inventory_service/Inventory_service/service/serviceImp/InventoryServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/Inventory-service/src/main/java/com/inventory_service/Inventory_service/service/serviceImp/InventoryServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Order-service/src/main/java/com/order_service/Order_service/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Order-service/src/main/java/com/order_service/Order_service/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Order-service/src/main/java/com/order_service/Order_service/entity/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/Order-service/src/main/java/com/order_service/Order_service/entity/Payment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Order-service/src/main/java/com/order_service/Order_service/enums/PaymentStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/Order-service/src/main/java/com/order_service/Order_service/enums/PaymentStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Order-service/src/main/java/com/order_service/Order_service/repository/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Order-service/src/main/java/com/order_service/Order_service/repository/OrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Order-service/src/main/java/com/order_service/Order_service/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Order-service/src/main/java/com/order_service/Order_service/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Order-service/src/main/java/com/order_service/Order_service/service/serviceImp/OrderServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/Order-service/src/main/java/com/order_service/Order_service/service/serviceImp/OrderServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Payment-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Payment-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Payment-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Payment-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Product-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Product-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Product-service/src/main/java/com/product_service/Product_service/ProductServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Product-service/src/main/java/com/product_service/Product_service/ProductServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Product-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Product-service/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+        <option value="AnnotationType" />
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;pranitvairagade1&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/SaurabhD02/eCommerce-application.git&quot;,
+    &quot;accountId&quot;: &quot;1e30f6b3-2dc4-417f-a955-d19e902a2fd8&quot;
+  }
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3G1Cmx4ToWgCqAGkW11OjR0QE3Z" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SearchEverywhere.PersistedScope.ClassSearchEverywhereContributor": "Project Files",
+    "Spring Boot.ConfigServerApplication.executor": "Run",
+    "Spring Boot.DiscoveryServerApplication.executor": "Run",
+    "Spring Boot.EmailServiceApplication.executor": "Run",
+    "Spring Boot.InventoryServiceApplication.executor": "Run",
+    "Spring Boot.OrderServiceApplication.executor": "Run",
+    "Spring Boot.PaymentServiceApplication.executor": "Run",
+    "Spring Boot.ProductServiceApplication.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "feature/product-service",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/pranit-vairagade/Documents/My-project/eCommerce-application/Email-service",
+    "node.js.detected.package.jshint": "true",
+    "node.js.selected.package.jshint": "",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "project.propCompiler",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.product_service.Product_service.entity" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Payment-service/src/main/resources/templates" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+    <option name="configurationStatuses">
+      <map>
+        <entry key="SpringBootApplicationConfigurationType">
+          <value>
+            <map>
+              <entry key="ConfigServerApplication" value="FAILED" />
+              <entry key="DiscoveryServerApplication" value="STOPPED" />
+              <entry key="EmailServiceApplication" value="STOPPED" />
+              <entry key="InventoryServiceApplication" value="STOPPED" />
+              <entry key="OrderServiceApplication" value="STOPPED" />
+              <entry key="PaymentServiceApplication" value="STOPPED" />
+              <entry key="ProductServiceApplication" value="STOPPED" />
+            </map>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.PaymentServiceApplication">
+    <configuration name="AuthServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Auth-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.flipkart.authservice.AuthServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Config-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.flipkart.configserver.ConfigServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiscoveryServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Discovery-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.flipkart.discoveryserver.DiscoveryServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmailServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="Email-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.Email_service.EmailServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InventoryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Inventory-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.inventory_service.Inventory_service.InventoryServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Order-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.order_service.Order_service.OrderServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaymentServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Payment-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.Payment_service.Payment_service.PaymentServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Product-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.product_service.Product_service.ProductServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-34e2839f716b-intellij.indexing.shared.core-IU-262.9437.142" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.9437.142" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1d758c89-1daf-4564-ba26-cc61cbb8ff37" name="Changes" comment="" />
+      <created>1783129853274</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1783129853274</updated>
+      <workItem from="1783129865137" duration="701000" />
+      <workItem from="1783130581893" duration="20124000" />
+      <workItem from="1783263276423" duration="1600000" />
+      <workItem from="1783302119024" duration="16081000" />
+      <workItem from="1783386679341" duration="26186000" />
+      <workItem from="1783561187424" duration="12854000" />
+      <workItem from="1783992842936" duration="7412000" />
+      <workItem from="1784168566684" duration="1560000" />
+      <workItem from="1784256187411" duration="32644000" />
+    </task>
+    <task id="LOCAL-00001" summary="crud_operation_code">
+      <option name="closed" value="true" />
+      <created>1783994284954</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1783994284954</updated>
+    </task>
+    <task id="LOCAL-00002" summary="crud_operation_code">
+      <option name="closed" value="true" />
+      <created>1783994303582</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1783994303582</updated>
+    </task>
+    <task id="LOCAL-00003" summary="crud_operation_code">
+      <option name="closed" value="true" />
+      <created>1783994543661</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1783994543661</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="crud_operation_code" />
+    <option name="LAST_COMMIT_MESSAGE" value="crud_operation_code" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Auth-service/src/main/java/com/flipkart/authservice/AuthServiceApplication.java</url>
+          <line>5</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Product-service/src/main/java/com/product_service/Product_service/entity/Category.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="NONE" type="java-line">
+          <url>file://$PROJECT_DIR$/Payment-service/src/main/java/com/Payment_service/Payment_service/entity/Payment.java</url>
+          <line>17</line>
+          <placement>INTER_LINE</placement>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/Order-service/src/main/java/com/order_service/Order_service/dto/CreateOrderRequestDTO.java</url>
+          <line>21</line>
+          <properties field="couponCode" class="com.order_service.Order_service.dto.CreateOrderRequestDTO" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
