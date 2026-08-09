@@ -7,6 +7,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.net.http.HttpResponse;
+import java.util.List;
+
 @RestController
 @RequestMapping("/inventory")
 public class InventoryController {
@@ -20,6 +23,11 @@ public class InventoryController {
 
     @GetMapping("/getByProductId/{productId}")
     public ResponseEntity<InventoryDto> getByProduct(@PathVariable String productId){
-        return new ResponseEntity<>(inventoryService.findByProductId(productId), HttpStatus.FOUND);
+        return new ResponseEntity<>(inventoryService.findByProductId(productId), HttpStatus.OK);
+    }
+
+    @PostMapping("/getInventoryByStock")
+    public ResponseEntity<List<InventoryDto>> getByProductIds(@RequestBody List<String> productIds){
+        return new ResponseEntity<>(inventoryService.getInventoryByProductIds(productIds), HttpStatus.OK);
     }
 }

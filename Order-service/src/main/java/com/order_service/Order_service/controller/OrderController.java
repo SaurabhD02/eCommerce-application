@@ -1,8 +1,9 @@
 package com.order_service.Order_service.controller;
 
 import com.order_service.Order_service.dto.CreateOrderRequestDTO;
-import com.order_service.Order_service.dto.OrderDto;
 import com.order_service.Order_service.dto.OrderResponseDTO;
+import com.order_service.Order_service.dto.PaymentStatusReqDto;
+import com.order_service.Order_service.dto.PaymentStatusRespDto;
 import com.order_service.Order_service.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -27,4 +28,8 @@ public class OrderController {
         return new ResponseEntity<>(orderService.findOrderByOrderNumber(orderNumber), HttpStatus.FOUND);
     }
 
+    @PostMapping("/payment-satus-update")
+    public ResponseEntity<PaymentStatusRespDto> updatePaymentStatus(@RequestBody PaymentStatusReqDto paymentStatusReq){
+        return new ResponseEntity<>(orderService.paymentStatusUpdate(paymentStatusReq), HttpStatus.OK);
+    }
 }

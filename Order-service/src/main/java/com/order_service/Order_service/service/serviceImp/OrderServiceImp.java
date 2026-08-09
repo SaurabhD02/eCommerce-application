@@ -2,8 +2,9 @@ package com.order_service.Order_service.service.serviceImp;
 
 import com.order_service.Order_service.config.OrderMapper;
 import com.order_service.Order_service.dto.CreateOrderRequestDTO;
-import com.order_service.Order_service.dto.OrderDto;
 import com.order_service.Order_service.dto.OrderResponseDTO;
+import com.order_service.Order_service.dto.PaymentStatusReqDto;
+import com.order_service.Order_service.dto.PaymentStatusRespDto;
 import com.order_service.Order_service.entity.OrderEntity;
 import com.order_service.Order_service.entity.OrderItems;
 import com.order_service.Order_service.entity.Payment;
@@ -95,5 +96,12 @@ public class OrderServiceImp implements OrderService {
     public OrderResponseDTO findOrderByOrderNumber(String orderNumber){
         OrderEntity order = orderRepository.findByOrderNumber(orderNumber);
         return orderMapper.toResponse(order);
+    }
+
+    @Override
+    public PaymentStatusRespDto paymentStatusUpdate(PaymentStatusReqDto paymentStatusReq){
+        orderRepository.findAndUpdateByOrderNumber(paymentStatusReq.getOrderNumber(), paymentStatusReq.getPaymentStatus());
+        return null;
+
     }
 }

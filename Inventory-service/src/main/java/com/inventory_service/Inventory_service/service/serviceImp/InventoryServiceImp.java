@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import com.inventory_service.Inventory_service.service.InventoryService;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class InventoryServiceImp implements InventoryService{
     public InventoryRepository inventoryRepository;
@@ -31,6 +33,13 @@ public class InventoryServiceImp implements InventoryService{
     public InventoryDto findByProductId(String id){
         InventoryEntity inventory = inventoryRepository.findByProductId(id);
         return modelMapper.map(inventory, InventoryDto.class);
+    }
+
+    @Override
+    public List<InventoryDto> getInventoryByProductIds(List<String> productIds){
+        List<InventoryEntity> inventory = inventoryRepository.getInventoryEntitiesByProductIds(productIds);
+        List<InventoryDto> inventoryDtos = inventory.stream().map(i -> modelMapper.map(i, InventoryDto.class)).toList();
+        return inventoryDtos;
     }
 
 }

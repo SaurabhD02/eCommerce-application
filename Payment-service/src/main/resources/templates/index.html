@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Razorpay Integration (Callback URL)</title>
+</head>
+
+<body>
+
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script th:inline="javascript">
+    // paymentResponseDtoJson is a JSON string serialized in the controller.
+    const order = JSON.parse(/*[[${paymentResponseDtoJson}]]*/ '{}');
+
+    console.log("order>>>", order);
+
+    function makePayment() {
+        const options = {
+            "key": /*[[${key}]]*/ 'rzp_test_key',
+            "amount": Math.round(order.amount * 100),
+            "currency": "INR",
+            "name": "Pra_sau_Enterprise",
+            "description": "Payment for your product to Pra_sau_Enterprise",
+            "order_id": order.razorpayOrderId,
+            "callback_url": "/payments/payment-callback/" + order.orderNumber,
+            "prefill": {
+                "name": order.name,
+                "email": order.email
+            }
+        };
+        console.log("options>>>>>", options);
+        const rzp1 = new Razorpay(options);
+        rzp1.open();
+    }
+</script>
+
+<form id="paymentForm">
+    <p th:text="'Please press button to pay amount: ₹' + ${paymentResponseDto.amount}"></p>
+    <button type="button" onclick="makePayment()">Pay Now</button>
+</form>
+
+</body>
+
+</html>

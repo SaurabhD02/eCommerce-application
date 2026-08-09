@@ -19,7 +19,9 @@ public class Payment {
     @GeneratedValue(strategy = GenerationType.UUID)
     private String id;
 
-    private String orderId;
+    @OneToOne
+    @JoinColumn(name = "oderNumber")
+    private OrderEntity orderEntity;
     private BigDecimal amount;
 
     @Enumerated(EnumType.STRING)

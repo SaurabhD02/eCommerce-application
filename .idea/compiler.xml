@@ -10,7 +10,7 @@
         <module name="Auth-service" />
         <module name="Discovery-server" />
       </profile>
-      <profile name="Annotation profile for Email-service" enabled="true">
+      <profile name="Annotation profile for Payment-service" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -18,17 +18,8 @@
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
         </processorPath>
         <module name="Order-service" />
-        <module name="Email-service" />
-      </profile>
-      <profile name="Annotation profile for Product-service" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
-        </processorPath>
         <module name="Payment-service" />
+        <module name="Email-service" />
         <module name="Product-service" />
         <module name="Inventory-service" />
       </profile>
